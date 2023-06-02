@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.Outer-Section{
+    width: 100%;
+    padding-bottom: 50px;
+    background: url("./assets/Black\ Abstract\ Texture\ Zoom\ Virtual\ Background.jpg");
+    
+}
+.Outer-Section h1{
+    text-align: center;
+    padding: 25px 0px;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.Mobiles{
+    flex-basis: 23%;
+    margin: 10px 0px;
+    background: white;
+    text-align: center;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+}
+.Mobiles h3{
+    padding: 10px 0px;
+}
+.Mobiles p{
+    font-size: 14px;
+    padding: 10px;
+}
+.Mobiles img{
+    height: 180px;
+    width: 140px;
+
+}
+
+.Mobiles button{
+    background: blue;
+    padding: 10px 25px;
+    color: beige;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+
+}
+
+.Mobiles:hover{
+    background: blue;
+}
+.Mobiles:hover h3,.Mobiles:hover p{
+    color: white;
+}
+.Mobiles:hover button{
+    background: white;
+    color: blue;
+}
+
+@media only screen and (min-width:200px) and (max-width: 767px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .Mobiles{
+        margin: 10px;
+    }
+    
+}
